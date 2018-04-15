@@ -3,7 +3,7 @@ const Discord = require ("discord.js").
 
 var prefix = ("@"+"Jojo ")
 
-if (message.content === prefix +  "omg") {
+if (message.content === prefix +"omg") {
   
    message.delete();
             if (message.member.voiceChannel === undefined) return message.reply(wrap("t'es pas dans un channel vocal gros boulet va !"));
