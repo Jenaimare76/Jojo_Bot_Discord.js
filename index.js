@@ -9,21 +9,11 @@
     bot.on('ready', function () {
 
     //ACTIVITE DU BOT
-        bot.user.setGame("@Jojo help")
+        bot.user.setGame("@Jojo help");
         console.log("je suis de retour ");
+        wait 100 s(setGame("https://discord.gg/NaDhCMt"));
+        wait 15 s (serGame("@Jojo help");
     });
 
 //connection du bot
-    bot.login(process.env.TOKEN);
-
-//Command textuel
-    bot.on('message', function (message) {
-        if (message.content === "!ping") {
-            message.channel.send("!pong")
-            }
-            
-         if (message.content === "!pong") {
-             message.channel.send("!ping")
-             }
-         });
-            
+    bot.login(process.env.TOKEN);          
