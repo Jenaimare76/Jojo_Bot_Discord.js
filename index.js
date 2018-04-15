@@ -14,8 +14,9 @@
     });
 
 //Command textuel
-    if (message.content === prefix + "?"){
+    if (message.content === "ping"){
+        channel.reply('ping')
+    }
         
-
 //connection du bot
     bot.login(process.env.TOKEN);
