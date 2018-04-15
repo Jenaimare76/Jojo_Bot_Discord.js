@@ -6,9 +6,9 @@ var prefix = ("@"+"Jojo ")
 if (message.content === prefix +  "omg") {
   
    message.delete();
-            if (message.member.voiceChannel === undefined) return message.reply(wrap("Vous n\'êtes pas dans un channel vocal !"));
+            if (message.member.voiceChannel === undefined) return message.reply(wrap("t'es pas dans un channel vocal gros boulet va !"));
             voiceChannel.join().then(connection =>{
-                const dispatcher = connection.playFile('./Audio/omg.mp3');
+                const dispatcher = connection.playFile('./music/omg.mp3');
                 dispatcher.on("end", end => {
                     voiceChannel.leave();
                 });
