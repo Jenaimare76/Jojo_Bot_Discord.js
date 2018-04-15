@@ -1,0 +1,14 @@
+{
+  "name": "bot_jojo_discord",
+  "version": "1.0.0",
+  "description": "bot discord nommer jojo crée par Jean.Dubuc",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jeanaimare76",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.3.2"
+  }
+}
