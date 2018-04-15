@@ -18,6 +18,7 @@
         if (message.content === ('!ping'){
             channel.reply('!pong')
             }
+            
          if (message.content === ('!pong'){
             channel.reply('!ping')
             }
