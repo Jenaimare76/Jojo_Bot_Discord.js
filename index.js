@@ -13,6 +13,9 @@
         console.log("je suis de retour ");
     });
 
+//connection du bot
+    bot.login(process.env.TOKEN);
+
 //Command textuel
     bot.on('message', function (message) {
         if (message.content === ('!ping'){
@@ -24,5 +27,3 @@
             }
         });
             
-//connection du bot
-    bot.login(process.env.TOKEN);
