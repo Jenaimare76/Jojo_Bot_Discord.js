@@ -1,9 +1,9 @@
 //les constantes
-const Discord = require('discord.js');
-const bot = new Discord.Client();
+    const Discord = require('discord.js');
+    const bot = new Discord.Client();
 
 //variabales
-var prefix = ("@Jojo")
+    var prefix = ("@Jojo")
 
 //CONNECTION DU BOT
     bot.on('ready', function () {
@@ -13,5 +13,10 @@ var prefix = ("@Jojo")
         console.log("je suis de retour ");
     });
 
+//Command textuel
+    if (message.content === prefix + "?"){
+        sendmessage("oui je suis la connard")
+        }
+
 //connection du bot
-bot.login(process.env.TOKEN);
+    bot.login(process.env.TOKEN);
