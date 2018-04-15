@@ -9,7 +9,7 @@
     bot.on('ready', function () {
 
     //ACTIVITE DU BOT
-        bot.user.setGame("@Jojo help");
+        bot.user.setGame("@" + bot.user.name + " help");
         console.log("je suis de retour ");
     });
 
