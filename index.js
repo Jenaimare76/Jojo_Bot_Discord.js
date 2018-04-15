@@ -3,7 +3,7 @@
     const bot = new Discord.Client();
 
 //variabales
-    var prefix = ("@Jojo")
+    var prefix = ("@Jojo ")
 
 //CONNECTION DU BOT
     bot.on('ready', function () {
@@ -15,8 +15,7 @@
 
 //Command textuel
     if (message.content === prefix + "?"){
-        sendmessage("oui je suis la connard")
-        }
+        
 
 //connection du bot
     bot.login(process.env.TOKEN);
