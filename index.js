@@ -18,13 +18,11 @@
         if (message.content === ('!ping'){
             channel.reply('!pong')
             }
-        })
-
-     bot.on('message', function (message) {
+        
         if (message.content === ('!pong'){
             channel.reply('!ping')
             }
         })
-        
+            
 //connection du bot
     bot.login(process.env.TOKEN);
