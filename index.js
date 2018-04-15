@@ -19,11 +19,13 @@
 //Command textuel
     bot.on('message', function (message) {
         if (message.content === "!ping") {
+            message.delete()
             message.channel.send("!pong")
             }
             
          if (message.content === "!pong") {
-            message.channel.send("!ping")
-            }
-        });
+             message.delete
+             message.channel.send("!ping")
+             }
+         });
             
