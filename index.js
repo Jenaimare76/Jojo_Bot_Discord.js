@@ -16,7 +16,7 @@
 //Command textuel
     bot.on('message', function (message) {
         if (message.content === 'ping'){
-        channel.reply('ping')
+        channel.reply('pong')
         }
     })
         
