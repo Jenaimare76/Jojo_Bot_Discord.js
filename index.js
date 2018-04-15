@@ -14,9 +14,11 @@
     });
 
 //Command textuel
-    if (message.content === "ping"){
+    bot.on('message', function (message) {
+        if (message.content === "ping"){
         channel.reply('ping')
-    }
+        }
+    })
         
 //connection du bot
     bot.login(process.env.TOKEN);
