@@ -18,11 +18,11 @@
 
 //Command textuel
     bot.on('message', function (message) {
-        if (message.content === ("!ping"){
+        if (message.content === ("!ping") {
             cmessage.channel.send("!pong")
             }
             
-         if (message.content === ("!pong"){
+         if (message.content === ("!pong") {
             message.channel.send("!ping")
             }
         });
