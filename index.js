@@ -11,8 +11,9 @@
     //ACTIVITE DU BOT
         bot.user.setGame("@Jojo help");
         console.log("je suis de retour ");
-        wait 100 s(setGame("https://discord.gg/NaDhCMt"));
-        wait 15 s (serGame("@Jojo help");
+        wait 100s(bot.user.setGame("https://discord.gg/NaDhCMt"));
+        wait 15s(bot.user.setGame("@Jojo help");
+        repeat;
     });
 
 //connection du bot
