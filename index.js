@@ -1,11 +1,11 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
+bit.on('ready', () => {
+  console.log(`Logged in as ${bot.user.tag}!`);
 });
 
-client.on('message', msg => {
+bot.on('message', msg => {
   if (msg.content === 'ping') {
     msg.reply('Pong!');
   }
