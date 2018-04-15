@@ -24,7 +24,7 @@
             }
             
          if (message.content === "!pong") {
-             message.delete
+             message.delete()
              message.channel.send("!ping")
              }
          });
