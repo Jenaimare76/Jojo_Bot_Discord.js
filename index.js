@@ -3,7 +3,7 @@
     const bot = new Discord.Client();
 
 //variabales
-    var prefix = ("@" + "Jojo ")
+    var prefix = ("@Jojo ")
 
 //CONNECTION DU BOT
     bot.on('ready', function () {
