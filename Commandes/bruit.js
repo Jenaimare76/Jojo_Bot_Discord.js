@@ -1,7 +1,7 @@
 const commandes = require ("./Commandes")
 const Discord = require ("discord.js").
 
-var prefix = prefix (./index.js)
+var prefix = prefix ("@Jojo")
 
 if (message.content === prefix +"omg") {
   
