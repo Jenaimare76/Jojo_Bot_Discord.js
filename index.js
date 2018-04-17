@@ -36,6 +36,6 @@
                 dispatcher.on("end", end => {
                     voiceChannel.leave();
                 });
-            });
+            })
             .catch(err => console.log(err));  
         }
