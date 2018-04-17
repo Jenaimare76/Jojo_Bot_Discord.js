@@ -28,7 +28,7 @@
         }
      }
      //OMG   
-        if (message.content === prefix +  "omg") {
+        if ('message'.content === prefix +  "omg") {
             message.delete();
             if (message.member.voiceChannel === undefined) return message.reply(wrap("tu n'es pas sur : \n UN CHANNEL VOCAL \n FILS DE PUTE !"));
             voiceChannel.join().then(connection =>{
