@@ -11,6 +11,7 @@
     //ACTIVITE DU BOT
         bot.user.setGame("@"+ "Jojo" + " help");
         console.log("je suis de retour ");
+        bot.user. setImage(.\image\)
     });
 
 //connection du bot
