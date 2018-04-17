@@ -16,7 +16,7 @@
 //connection du bot
     bot.login(process.env.TOKEN);          
 
-//COMMANDES POUR FICHIER AUDIO
+//commande pour le bruit
     function executeQueue(message, queue) {
 
         if (messsage.member.voiceChannel) {
@@ -29,7 +29,7 @@
         }
      }
     
-        //COMMANDE DU SON "OMG"    
+        //OMG   
         if (message.content === prefix +  "omg") {
 
             message.delete();
