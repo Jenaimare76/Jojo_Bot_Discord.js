@@ -7,7 +7,6 @@
 
 //CONNECTION DU BOT
     bot.on('ready', function () {
-
     //ACTIVITE DU BOT
         bot.user.setGame("@"+ "Jojo" + " help");
         console.log("je suis de retour ");
@@ -28,10 +27,8 @@
             });
         }
      }
-    
-        //OMG   
+     //OMG   
         if (message.content === prefix +  "omg") {
-
             message.delete();
             if (message.member.voiceChannel === undefined) return message.reply(wrap("tu n'es pas sur : \n UN CHANNEL VOCAL \n FILS DE PUTE !"));
             voiceChannel.join().then(connection =>{
@@ -39,6 +36,6 @@
                 dispatcher.on("end", end => {
                     voiceChannel.leave();
                 });
-            })
+            });
             .catch(err => console.log(err));  
         }
