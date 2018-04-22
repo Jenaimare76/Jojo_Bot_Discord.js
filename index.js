@@ -3,11 +3,11 @@
     const bot = new Discord.Client();
 
 //variabales
-    var prefix = ("!")
+    var prefix = ("@Jojo ")
 
-//CONNECTION DU BOT
+//conection bot
     bot.on('ready', function () {
-    //ACTIVITE DU BOT
+    //modifier son activite
         bot.user.setGame("@"+ "Jojo" + " help");
         console.log("je suis de retour ");
     });
