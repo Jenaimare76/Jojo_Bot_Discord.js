@@ -3,13 +3,19 @@
     const bot = new Discord.Client();
 
 //variabales
-    var prefix = ("@Jojo ")
+    var prefix = ("@"+"Jojo"+" ")
 
 //conection bot
     bot.on('ready', function () {
     //modifier son activite
-        bot.user.setGame("@"+ "Jojo" + " help");
+        bot.user.setGame("@"+ "Jojo" + " " + "help");
         console.log("je suis de retour ");
+        client.user.setAvatar('./image/Jojo.png')
+            .then(user => console.log(`New avatar set!`))
+            .catch(console.error);
+        client.user.setUsername('discordjs')
+            .then(user => console.log(`My new username is ${user.username}`))
+            .catch(console.error);
     });
 
 //connection du bot
