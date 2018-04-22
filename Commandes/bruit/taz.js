@@ -1,4 +1,4 @@
-const Commande = require('Jojo_Bot_Discord.js/Commandes/CommandMap.js')
+const Commande = require('Jeanaimare76/Jojo_Bot_Discord.js/Commandes/CommandMap.js')
 
 module.exports =class taz extends Commande{
     
