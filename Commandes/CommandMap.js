@@ -6,12 +6,12 @@ export class command {
       return true
     }
     return false
+  }
 
   static match (message) {
   return false
   }
-   
+
    static action (message) {
     }
   }
-  

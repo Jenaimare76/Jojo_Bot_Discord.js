@@ -1,6 +1,6 @@
-const Commande = require('Jeanaimare/Jojo_Bot_Discord.js/Commandes/CommandMap.js')
+const commande = require('../CommandMap')
 
-module.exports =class taz extends Commande{
+module.export =class taz extends commande{
     
   static match (message) {
     return message.content.startsWith('@Jojo taz')
