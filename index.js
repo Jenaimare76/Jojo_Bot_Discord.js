@@ -27,12 +27,12 @@
             });
         }
      }
-     //OMG   
-        if ('message'.content === prefix +  "omg") {
+     //taz   
+        if ('message'.content === prefix +  "taz") {
             message.delete();
             if (message.member.voiceChannel === undefined) return message.reply(wrap("tu n'es pas sur : \n UN CHANNEL VOCAL \n FILS DE PUTE !"));
             voiceChannel.join().then(connection =>{
-                const dispatcher = connection.playFile('./music/omg.mp3');
+                const dispatcher = connection.playFile('./music/tazer.mp3');
                 dispatcher.on("end", end => {
                     voiceChannel.leave();
                 });
