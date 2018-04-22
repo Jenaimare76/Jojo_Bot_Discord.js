@@ -17,6 +17,6 @@
     bot.login(process.env.TOKEN);
 
 //Commandes
-bot.on('message", function (message) {
+bot.on('message', function (message) {
        let commandUsed = taz.parse(message)
 })
