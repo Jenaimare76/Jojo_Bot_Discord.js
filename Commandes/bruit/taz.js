@@ -1,4 +1,4 @@
-const Commande = require('./Commandes/CommandeMap')
+const Commande = require('./Commandes/CommandMap')
 
 module.exports =class taz extends Commande{
     
