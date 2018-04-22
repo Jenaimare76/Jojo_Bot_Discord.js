@@ -10,12 +10,6 @@
     //modifier son activite
         bot.user.setGame("@"+ "Jojo" + " " + "help");
         console.log("je suis de retour ");
-        client.user.setAvatar('./image/photo jotaro.png')
-            .then(user => console.log(`New avatar set!`))
-            .catch(console.error);
-        client.user.setUsername('discordjs')
-            .then(user => console.log(`My new username is ${user.username}`))
-            .catch(console.error);
     });
 
 //connection du bot
