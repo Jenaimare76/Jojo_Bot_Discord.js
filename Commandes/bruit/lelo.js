@@ -1,8 +1,8 @@
 const CommandMap = require('../CommandMap')
 
-module.export = class omg extends CommandMap {
+module.export =class lelo extends CommandMap {
   static match (message) {
-    return message.content.startsWith('@jojo '+'omg')
+    return message.content.startsWith('@Jojo '+'lelo')
   }
   
   static action (message) {
@@ -12,8 +12,8 @@ module.export = class omg extends CommandMap {
     voiceChannel
       .join()
       .then(function (connection) {
-        connection.playFile('.../music/omg.mp3')
+        connection.playFile('.../music/lelo.mp3')
     })
   }
-
+  
 }

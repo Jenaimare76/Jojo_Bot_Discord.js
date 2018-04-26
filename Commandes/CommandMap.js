@@ -1,4 +1,4 @@
-export class command {
+module.export = class CommandMap {
   
   static parse (message) {
     if(this.match(message)) {
