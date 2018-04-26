@@ -1,6 +1,6 @@
 const CommandMap = require('../CommandMap')
 
-module.export =class yare extends CommandMap {
+module.exports =class yare extends CommandMap {
   static match (message) {
     return message.content.startsWith('@Jojo '+'yare')
   }
