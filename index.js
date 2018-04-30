@@ -1,43 +1,66 @@
+//smile if you like hentai
+
 //les constantes
-    const Discord = require('discord.js');
-    const bot = new Discord.Client();
-    const lelo = require ('./Commandes/bruit/lelo')
-    const omg = require ('./Commandes/bruit/omg')
-    const taz = require ('./Commandes/bruit/taz')
-    const yare = require ('./Commandes/bruit/yare')
+const Discord = require('discord.js');
+const bot = new Discord.Client();
+const botrp = require('discord-rich-presence') ('423887705064079360');
+const lelo = require ('./Commandes/bruit/lelo')
+const omg = require ('./Commandes/bruit/omg')
+const taz = require ('./Commandes/bruit/taz')
+const yare = require ('./Commandes/bruit/yare')
+const jojo1png = require('./Commandes/image/jotaropng')
 
 //variabales
-    var prefix = ('@Jojo'+' ')
+var prefix = ('=')
+var prefixAdmin = ('@=')
 
-//conection bot
-    bot.on('ready', function () {
-    //modifier son activite
-        bot.user.setGame(prefix+"help");
-        console.log("je suis de retour ");
-    });
-    
-    //MESSAGE COMMANDE
-    bot.on('message', async message => {
-        if (message.author.bot) return;
-        if (message.content.indexOf(config.prefix) !== 0) return;
-         
-        const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
-        const command = args.shift().toLowerCase();
-        
 //connection du bot
     bot.login(process.TOKEN);
-
-//Commandes pour le bruit
+    
+    //rich Presence
+    botrp.updatePresence({
+        details: '~ '+ prefix +'help ~ | ~ '+ prefixAdmin +'help ~',
+        state: 'si tu veux rejoind ma guild :',
+        largeImageKey: 'la_guild',
+        smallImageKey: 'madara_small',
+        joinSecret: 'https://discord.gg/NaDhCMt' ,
+        instance: true,
+    });
+    
+    //conection bot
+    bot.on('ready', function () {
+    //modifier son activite
+        bot.user.setStatus('dnd')
+            .then(console.log)
+            .catch(console.error);
+            console.log("je suis de retour ");
+        });
+    
+    //Commandes pour le bruit
     bot.on('bruit', function (message) {
-       let commandUsed =  
-        taz.parse(message) || 
+        let commandUsed =  
+        taz.parse(message) ||
         omg.parse(message) || 
         lelo.parse(message) || 
         yare.parse(message)
-    })
+    });
+    
+    //Commandes pour des photo
+    bot.on('image', function (message) {
+        let commandUsed =  
+        jojo1png.parse(message)
+    });
+    
+//MESSAGE COMMANDE
+    bot.on('message', async message => {
+      if (message.author.bot) return;
+      if (message.content.indexOf(config.prefix) !== 0) return;
+      
+      const command = args.shift().toLowerCase();
+      const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
 
 //COMMANDE OPGGL
-    if (command === "opggl") {
+    if(command === "opggl") {
         const Name = args.join(" ");
         message.delete().catch(O_o => { });
 
@@ -49,5 +72,4 @@
             message.channel.send("http://euw.op.gg/summoner/userName=" + Name)
         }
     }
-
 });

@@ -12,7 +12,7 @@ module.exports =class yare extends CommandMap {
     voiceChannel
       .join()
       .then(function (connection) {
-        connection.playFile('.../music/Yare Yare Daze.mp3')
+        connection.playFile('.../music/yare yare.mp3')
     })
   }
 
