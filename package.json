@@ -18,6 +18,8 @@
   "homepage": "https://github.com/Jenaimare76/Jojo_Bot_Discord.js#readme",
   "dependencies": {
     "discord.js": "^11.3.2",
-    "npm": "^6.1.0"
+    "ffmpeg-binaries": "^4.0.0",
+    "npm": "^6.1.0",
+    "ytdl-core": "^0.20.4"
   }
 }
