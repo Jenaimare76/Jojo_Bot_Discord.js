@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const ytdl = require("ytdl-core");
 const queue = new Map();
-const tokenFolder = require("./tokenfile.json"||"./tokenlog.json");
+const tokenFolder = require("./tokenfile.json");
 const botconfig = require("./botconfig.json");
 const fs = require("fs");
 const bot = new Discord.Client({disableEveryone: true});
