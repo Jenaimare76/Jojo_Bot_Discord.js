@@ -1,0 +1,18 @@
+const Discord = require("discord.js");
+const props = require("../index.js");
+
+module.exports.run = async (bot, message, args) => {
+
+    message.delete();
+    let helpEmbed = new Discord.RichEmbed()
+    .setDescription('Help_Commmandes')
+    .setColor('#FF5555')
+    .setThumbnail(bot.user.displayAvatarURL)
+    .addField(props.help.name, props.help.description)
+    return message.channel.send(helpEmbed);
+}
+
+module.exports.help = {
+    name: "help",
+    description: " ",
+}
