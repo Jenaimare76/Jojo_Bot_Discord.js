@@ -22,7 +22,7 @@
     "ffmpeg": "0.0.4",
     "ffmpeg-binaries": "^4.0.0",
     "music-library-index": "^2.1.0",
-    "npm": "^6.4.1",
+    "npm": "^6.13.4",
     "opusscript": "0.0.6",
     "ytdl": "^0.10.2",
     "ytdl-core": "^0.20.4"
